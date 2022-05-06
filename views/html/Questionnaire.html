@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Questionnaire.css">
+  </head>
+  <body>
+    <div class="navbar-wrapper">
+      <div class="navbar">
+        <a href="/survey-results">Survey Results</a>
+      </div>
+    </div>
+
+
+    <form class="form-grid" id="survey_questionnaire" action="/submit-survey">
+
+            <label for="favcolor" id="form-fav-color">
+              What is your favorite primary color?
+            </label>
+
+            <div>
+              <select name="colors-list" id="favcolor">
+                <option value="empty" disabled selected></option>
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="orange">Orange</option>
+                <option value="purple">Purple</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+              </select>
+            </div>
+
+            <label for="favcolor" id="form-fav-color">
+              Which of these animals do you prefer?
+            </label>
+
+            <div>
+              <select name="animal-list" id="prefanimal">
+                <option value="empty" disabled selected></option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="monkey">Monkey</option>
+                <option value="whale">Whale</option>
+              </select>
+            </div>
+
+            <label for="vehicleowner" id="form-vehicle-owner">
+              Do you own a vehicle?
+            </label>
+
+          <div>
+            <input type="radio" id="vehicleowner" value="no">
+            <label for="no">No</label>
+
+            <input type="radio" id="vehicleowner" value="yes">
+            <label for="yes">Yes</label>
+          </div>
+
+            <label for="isstudent" id="form-is-student">
+              Are you a student?
+            </label>
+
+          <div>
+            <input type="radio" id="isstudent" value="no">
+            <label for="no">No</label>
+
+            <input type="radio" id="isstudent" value="yes">
+            <label for="yes">Yes</label>
+          </div>
+
+          <button type="submit">Submit</button>
+
+    </form>
+  </body>
+</html>
